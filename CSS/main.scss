@@ -1,0 +1,115 @@
+@import './header.scss';
+@import './section.scss';
+@import './about.scss';
+@import './oue-menu';
+@import './ourproduct';
+@import './review';
+@import './contact';
+@import './blogs';
+@import './footer';
+
+$main-color: #d3ad7f;
+$black: #13131a;
+$bg: #010103;
+$border: .1rem solid rgba(255,255,255,.3);
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $bg;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: auto;
+    padding: 10px 5px;
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+// All header 
+.head{
+    width: fit-content;
+    margin: 20px auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.head span{
+    color: $main-color;
+}
+
+//All Buttons
+button{
+    width: fit-content;
+    padding: 10px;
+    color: #fff;
+    background-color: $main-color;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+button:hover{
+    transform: scaleX(1.2);
+}
+
+
+.btn{
+    position: fixed;
+    right: -50px;
+    bottom: 5px;
+    padding: 8px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #d3ad7f9e;
+    transition: .5s;
+}
+.btn.dis{
+    right: 10px;
+}
+.btn:hover{
+    background-color: $main-color;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: $bg;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 10px;
+}
+// ::-webkit-scrollbar-corner{
+// }

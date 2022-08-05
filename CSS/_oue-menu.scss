@@ -1,0 +1,39 @@
+.our-menu{
+    margin: 30px 0px;
+}
+.our-menu .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px,1fr));
+    gap: 15px;
+}
+.our-menu .products .product{
+    border: 1px solid #fff;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    transition: .5s;
+}
+.our-menu .products .product:hover{
+    background-color: #fff;
+    color: #000;
+}
+.our-menu .products .product .title{
+    font-size: 27px;
+    margin: 10px;
+}
+.our-menu .products .product .price{
+    font-size: 25px;
+    margin: 10px;
+}
+.our-menu .products .product .price del{
+    font-size: 15px;
+    color: #999;
+}
+.product button{
+    border: none;
+    background-color: $main-color;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}

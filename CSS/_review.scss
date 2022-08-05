@@ -1,0 +1,43 @@
+.review{
+    padding: 30px 0 0;
+}
+.review .container .reviews-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+    gap: 15px;
+    color: #fff;
+    padding: 20px 0;
+}
+.reviews-content .review-box{
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+.reviews-content .img{
+    margin-bottom: 15px;
+}
+.reviews-content .img.round{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 15px auto;
+    // overflow: hidden;
+}
+.reviews-content .round img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.reviews-content .review-box .descreption{
+    margin: 10px 0;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.reviews-content .review-box .name{
+    margin: 10px 0;
+}
+.reviews-content .review-box .starts{
+    font-size: 20px;
+    margin: 10px 0;
+    color: $main-color;
+}

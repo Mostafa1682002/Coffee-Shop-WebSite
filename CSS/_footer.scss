@@ -1,0 +1,64 @@
+footer{
+    background-color: $black;
+    color: #fff;
+    padding: 30px 0;
+}
+footer .social,
+footer .all-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+footer .social li{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+}
+.social li a{
+    color: #fff;
+}
+.social li:hover {
+    background-color: $main-color;
+}
+
+
+.all-section li{
+    width: 90px;
+    text-align: center;
+    padding: 7px 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin:5px 3px ;
+    transition: .5s;
+}
+.all-section li:hover{
+    background-color: $main-color;
+}
+
+.named{
+    text-align: center;
+    color: #fff;
+    font-size:25px;
+    font-weight: 500;
+}
+@media (max-width:787px) {
+    .named{
+        font-size: 17px;
+    }
+}
+.named .you{
+    color: $main-color;
+}

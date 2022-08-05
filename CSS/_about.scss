@@ -1,0 +1,42 @@
+$black: #13131a;
+
+.about{
+    margin: 30px 0;
+}
+.about .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(400px,1fr));
+    padding: 30px 0;
+}
+@media (max-width:768px) {
+    .about .container{
+        grid-template-columns: repeat(auto-fill ,minmax(300px,1fr));
+    }
+    
+}
+.about .container img{
+    width: 100%;
+}
+.about .container .text{
+    background-color: $black;
+    color: #fff;
+    padding: 40px 20px;
+}
+.about .container .text h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+.about .container .text p{
+    line-height: 1.5;
+    color: #999;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.about .container .text button{
+    background-color: $main-color;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: none;
+    cursor: pointer;
+}
