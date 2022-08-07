@@ -29,15 +29,8 @@ section .container{
     line-height: 1.6;
 }
 .section-text button{
-    background-color: $main-color;
-    color: #fff;
-    padding: 10px 5px;
     font-size: 20px;
-    width: 40%;
-    display: block;
-    border: none;
-    margin: 30px 0px;
-    cursor: pointer;
+    margin-top:10px ;
 }
 @media (max-width:768px) {
     .section-text{
