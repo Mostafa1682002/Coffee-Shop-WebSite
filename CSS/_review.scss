@@ -8,6 +8,12 @@
     color: #fff;
     padding: 20px 0;
 }
+@media (max-width:768px) {
+    .review .container .reviews-content{
+        grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    }
+}
+
 .reviews-content .review-box{
     border: 1px solid #fff;
     text-align: center;

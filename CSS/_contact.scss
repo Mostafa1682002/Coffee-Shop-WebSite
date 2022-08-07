@@ -38,7 +38,12 @@ $bg: #010103;
     padding:10px;
 }
 .contact .container .form .input-box span{
-    font-size: 25px;
+    font-size: 23px;
+}
+@media (max-width:768px) {
+    .contact .container .form .input-box span{
+        font-size: 18px;
+    }
 }
 .contact .container .form .input-box input{
     width: 90%;

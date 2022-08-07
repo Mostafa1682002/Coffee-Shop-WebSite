@@ -419,6 +419,11 @@ section .container {
   padding: 20px 0;
 }
 
+@media (max-width: 768px) {
+  .review .container .reviews-content {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
 .reviews-content .review-box {
   border: 1px solid #fff;
   text-align: center;
@@ -500,9 +505,14 @@ section .container {
 }
 
 .contact .container .form .input-box span {
-  font-size: 25px;
+  font-size: 23px;
 }
 
+@media (max-width: 768px) {
+  .contact .container .form .input-box span {
+    font-size: 18px;
+  }
+}
 .contact .container .form .input-box input {
   width: 90%;
   padding: 10px;
