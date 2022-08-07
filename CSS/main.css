@@ -357,6 +357,11 @@ section .container {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .our-products .container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
 .our-products .container .products-fresh {
   border: 1px solid #fff;
   color: #fff;
