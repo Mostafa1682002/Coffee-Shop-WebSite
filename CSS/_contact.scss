@@ -8,9 +8,15 @@ $bg: #010103;
     grid-template-columns: repeat(auto-fill ,minmax(400px,1fr));
     padding: 30px 0;
 }
-@media (max-width:768px) {
+@media (max-width:992px) {
     .contact .container{
         grid-template-columns: repeat(auto-fill ,minmax(300px,1fr));
+    }
+    
+}
+@media (max-width:768px) {
+    .contact .container{
+        grid-template-columns: repeat(auto-fill ,minmax(260px,1fr));
     }
     
 }

@@ -7,7 +7,12 @@
     gap:15px;
     padding:20px 0 30px ;
 }
-
+@media (max-width:768px) {
+    .blogs .blog-content{
+        grid-template-columns: repeat(auto-fill ,minmax(260px,1fr));
+    }
+    
+}
 .blog-content .blog-box{
     border: 1px solid #fff;
 }
@@ -17,6 +22,7 @@
     transition: .2s;
 }
 .blog-content .blog-box .img-blog img{
+    width: 100%;
     transition: .2s;
 }
 .blog-content .blog-box .img-blog:hover img{
