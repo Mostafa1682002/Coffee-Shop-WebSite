@@ -25,7 +25,7 @@
     width: 45px;
     height: 45px;
     margin-left:5px ;
-    line-height: 50px;
+    line-height: 45px;
     border: 1px solid #fff;
     font-size: 22px;
     cursor: pointer;
@@ -55,4 +55,20 @@
 .products-fresh .fresh-price del{
     font-size: 18px;
     padding-left: 10px;
+}
+
+@media (max-width:768px){
+    .products-fresh .fresh-text h3{
+        font-size: 23px;
+    }
+    .products-fresh .fresh-text .starts{
+        font-size: 18px;
+    }
+    .products-fresh .fresh-text .fresh-price{
+        font-size: 20px;
+    }
+    .products-fresh .fresh-text .fresh-price del{
+        font-size: 15px;
+        padding-left: 5px;
+    }
 }

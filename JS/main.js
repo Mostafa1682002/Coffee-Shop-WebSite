@@ -3,6 +3,7 @@ let search_icon=document.querySelector(".search");
 let search_input=document.querySelector(".search-input");
 let input=document.querySelector(".search-input input")
 let close=document.getElementById("close");
+let overlay=document.querySelector('.overlay');
 
 
 search_icon.onclick=function(){
@@ -12,6 +13,8 @@ search_icon.onclick=function(){
     sectionCart.classList.remove("found");
     //remove class Visible from Links
     links.classList.remove("visible");
+    //Add Class active From Overlay
+    overlay.classList.toggle('active');
 }
 
 input.onkeyup=function(){
@@ -40,6 +43,8 @@ bars.onclick=function(){
     search_input.classList.remove("show");
     //remove class found from Section Cards
     sectionCart.classList.remove("found");
+    //Add Class active From Overlay
+    overlay.classList.toggle('active');
 }
 
 //Add Class active To Link Click
@@ -58,12 +63,25 @@ let sectionCart=document.querySelector(".cart-section");
 
 cart.onclick=function(){
     sectionCart.classList.toggle("found");
-
     //remove class show from Links
     search_input.classList.remove("show");
     //remove class Visible from Links
     links.classList.remove("visible");
+    //Add Class active From Overlay
+    overlay.classList.toggle('active');    
 }
+
+overlay.onclick=function(){
+    //remove class found from carts
+    sectionCart.classList.remove("found");
+    //remove class show from Links
+    search_input.classList.remove("show");
+    //remove class Visible from Links
+    links.classList.remove("visible");
+    //remove Class active From Overlay
+    overlay.classList.remove('active'); 
+}
+
 //End Header
 
 //Footer
@@ -86,17 +104,3 @@ buttonUp.onclick=function(){
     window.scrollTo(0,0)
 }
 
-
-//if onclick on document remove all class from search ,links ,cart
-document.body.children[1].onclick=function(){
-    if(document.body.children[0].children[0].children[1].classList.contains("visible")){
-        //remove class Visible from Links
-        links.classList.remove("visible");
-    }else if(document.body.children[0].children[0].children[2].children[3].classList.contains("show")){
-        //remove class show from input
-        search_input.classList.remove("show");
-    }else if(document.body.children[0].children[0].children[3].classList.contains("found")){
-        //remove class found from Cart
-        sectionCart.classList.remove("found");
-    }
-}

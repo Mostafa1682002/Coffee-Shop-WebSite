@@ -57,3 +57,8 @@
 .blog-content .blog-box .text-blog button{
     font-size: 17px;
 }
+@media (max-width:768px){
+    .blog-content .blog-box .text-blog .blog-title{
+        font-size: 25px;
+    }
+}

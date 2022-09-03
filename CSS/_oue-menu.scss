@@ -31,6 +31,15 @@
     font-size: 25px;
     margin: 10px;
 }
+@media (max-width:768px) {
+    .our-menu .products .product .title{
+        font-size: 25px;
+    }
+    .our-menu .products .product .price{
+        font-size: 20px;
+    }
+}
+
 .our-menu .products .product .price del{
     font-size: 15px;
     color: #999;
