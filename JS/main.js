@@ -14,7 +14,6 @@ search_icon.onclick=function(){
     //remove class Visible from Links
     links.classList.remove("visible");
     //Add Class active From Overlay
-    overlay.classList.toggle('active');
 }
 
 input.onkeyup=function(){
@@ -55,6 +54,7 @@ allLinks.forEach(function(e){
         e.classList.add("active");
         //remove class show from Links
         links.classList.remove("visible");
+        overlay.classList.remove('active');
     }
 })
 
@@ -68,7 +68,6 @@ cart.onclick=function(){
     //remove class Visible from Links
     links.classList.remove("visible");
     //Add Class active From Overlay
-    overlay.classList.toggle('active');    
 }
 
 overlay.onclick=function(){
