@@ -73,7 +73,7 @@ let year=document.querySelector(".year");
 year.innerHTML=date.getFullYear();
 
 //Button Scroll
-let buttonUp=document.querySelector(".btn");
+let buttonUp=document.querySelector(".btn-top");
 window.onscroll=function(){
     if(window.scrollY >= 600){
         buttonUp.classList.add("dis");

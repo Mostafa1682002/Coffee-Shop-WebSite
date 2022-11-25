@@ -45,7 +45,7 @@ header .container .links{
         top: 91px;
     }
 }
-header .container .links li{
+header .container .links li a{
     padding: 15px;
     width: 100%;
     text-align: center;
@@ -55,11 +55,11 @@ header .container .links li a{
     color: #fff;
     font-size: 18px;
 }
-header .container .links li:hover ,
-header .container .links li.active {
+header .container .links li a:hover ,
+header .container .links li.active a{
     border-bottom: 1px solid $main-color;
 }
-header .container .links li:hover a,
+header .container .links li a:hover ,
 header .container .links li.active a{
     color: $main-color;
 }

@@ -83,42 +83,34 @@ a{
         font-size: 30px;
     }
 }
-
-//All Buttons
-button{
-    width: fit-content;
+.btn,.btn-top{
     padding: 10px;
+    margin: 5px 0 0;
     color: #fff;
-    background-color: $main-color;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition: .5s;
-}
-button:hover{
-    transform: scaleX(1.2);
-}
-
-
-.btn{
-    position: fixed;
-    right: -50px;
-    bottom: 5px;
-    padding: 8px 10px;
-    color: #fff;
-    cursor: pointer;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 17px;
     background-color: #d3ad7f9e;
     transition: .5s;
+    cursor: pointer;
 }
-.btn.dis{
+.btn-top{
+    position: fixed;
+    right: -50px;
+    bottom: 10px;
+    padding: 7px 10px;
+}
+.btn-top.dis{
     right: 10px;
 }
+.btn-top,
 .btn:hover{
     background-color: $main-color;
 }
-
+@media (max-width:768px){
+    .btn{
+        font-size: 16px;
+    }
+}
 ::-webkit-scrollbar{
     width: 10px;
 }
