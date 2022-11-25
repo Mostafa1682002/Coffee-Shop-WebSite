@@ -16,28 +16,12 @@ search_icon.onclick=function(){
     //Add Class active From Overlay
 }
 
-input.onkeyup=function(){
-    if(input.value.length > 0){
-        close.style.display="block";
-        close.onclick=function(){
-            let arr=input.value.split("");
-            arr.pop();
-            input.value=arr.join("")
-            if(arr.length==0){
-                close.style.display="none";
-            }
-        }
-    }else{
-        close.style.display="none";
-    }
-}
 
 //Click bar
 let bars=document.querySelector(".bar");
 let links=document.querySelector(".links");
 bars.onclick=function(){
     links.classList.toggle("visible");
-
     //remove class show from Search
     search_input.classList.remove("show");
     //remove class found from Section Cards
@@ -87,8 +71,6 @@ overlay.onclick=function(){
 let date=new Date();
 let year=document.querySelector(".year");
 year.innerHTML=date.getFullYear();
-
-
 
 //Button Scroll
 let buttonUp=document.querySelector(".btn");
