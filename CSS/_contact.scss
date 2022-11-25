@@ -38,16 +38,19 @@ $bg: #010103;
 }
 .contact .container .form .input-box{
     width: 100%;
+    display: flex;
+    align-items: center;
     border: 1px solid #fff;
     margin-bottom: 15px;
     background-color: #000;
     padding:10px;
 }
 .contact .container .form .input-box span{
-    font-size: 23px;
+    font-size: 20px;
+    padding: 5px;
 }
 .contact .container .form .input-box input{
-    width: 87%;
+    width: 100%;
     padding: 10px ;
     border: none;
     outline: none;
@@ -61,9 +64,6 @@ $bg: #010103;
     }
     .contact .container .form .input-box{
         padding: 5px;
-    }
-    .contact .container .form .input-box span{
-        font-size: 20px;
     }
     .contact .container .form .input-box input{
         padding: 10px 5px;

@@ -127,16 +127,6 @@ header .container .links li.active a {
   color: #d3ad7f;
 }
 
-.search-input #close {
-  color: #000;
-  position: absolute;
-  top: 10px;
-  font-size: 20px;
-  right: 47px;
-  cursor: pointer;
-  display: none;
-}
-
 .cart-section {
   position: fixed;
   background-color: #fff;
@@ -228,7 +218,7 @@ section .container {
 
 .section-text p {
   color: #fff;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6;
 }
 
@@ -245,6 +235,9 @@ section .container {
   }
   .section-text h2 {
     font-size: 30px;
+  }
+  .section-text p {
+    font-size: 15px;
   }
   .section-text button {
     margin: 30px auto;
@@ -308,15 +301,10 @@ section .container {
 
 .our-menu .products {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
 }
 
-@media (max-width: 768px) {
-  .our-menu .products {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
-}
 .our-menu .products .product {
   border: 1px solid #fff;
   padding: 30px;
@@ -368,17 +356,12 @@ section .container {
 
 .our-products .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
   padding: 30px 10px 0px;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .our-products .container {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
 .our-products .container .products-fresh {
   border: 1px solid #fff;
   color: #fff;
@@ -452,17 +435,12 @@ section .container {
 
 .review .container .reviews-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
   color: #fff;
   padding: 20px 0;
 }
 
-@media (max-width: 768px) {
-  .review .container .reviews-content {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
 .reviews-content .review-box {
   border: 1px solid #fff;
   text-align: center;
@@ -542,6 +520,8 @@ section .container {
 
 .contact .container .form .input-box {
   width: 100%;
+  display: flex;
+  align-items: center;
   border: 1px solid #fff;
   margin-bottom: 15px;
   background-color: #000;
@@ -549,11 +529,12 @@ section .container {
 }
 
 .contact .container .form .input-box span {
-  font-size: 23px;
+  font-size: 20px;
+  padding: 5px;
 }
 
 .contact .container .form .input-box input {
-  width: 87%;
+  width: 100%;
   padding: 10px;
   border: none;
   outline: none;
@@ -568,9 +549,6 @@ section .container {
   }
   .contact .container .form .input-box {
     padding: 5px;
-  }
-  .contact .container .form .input-box span {
-    font-size: 20px;
   }
   .contact .container .form .input-box input {
     padding: 10px 5px;
@@ -595,16 +573,11 @@ section .container {
 
 .blogs .blog-content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   gap: 15px;
   padding: 20px 0 30px;
 }
 
-@media (max-width: 768px) {
-  .blogs .blog-content {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  }
-}
 .blog-content .blog-box {
   border: 1px solid #fff;
 }
@@ -625,17 +598,15 @@ section .container {
 }
 
 .blog-content .blog-box .text-blog {
-  margin: 10px;
+  padding: 10px 12px;
   overflow: hidden;
   color: #fff;
 }
 
 .blog-content .blog-box .text-blog .blog-title {
-  font-size: 26px;
-  padding: 10px 0;
+  font-size: 25px;
   font-weight: 500;
   cursor: pointer;
-  padding: 0 7px;
 }
 
 .blog-content .blog-box .text-blog .blog-title:hover {
@@ -644,25 +615,17 @@ section .container {
 
 .blog-content .blog-box .text-blog .date {
   color: #d3ad7f;
-  padding: 0 7px;
-  margin: 7px 0;
   font-size: 20px;
 }
 
 .blog-content .blog-box .text-blog p {
-  margin: 10px 0;
-  padding: 0 7px;
+  margin: 7px 0;
 }
 
 .blog-content .blog-box .text-blog button {
   font-size: 17px;
 }
 
-@media (max-width: 768px) {
-  .blog-content .blog-box .text-blog .blog-title {
-    font-size: 25px;
-  }
-}
 footer {
   background-color: #13131a;
   color: #fff;
@@ -689,7 +652,7 @@ footer .social li {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .social li a {
@@ -720,7 +683,7 @@ footer .social li {
 .named {
   text-align: center;
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
 }
 

@@ -22,7 +22,7 @@ footer .social li{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
 }
 .social li a{
     color: #fff;
@@ -30,8 +30,6 @@ footer .social li{
 .social li:hover {
     background-color: $main-color;
 }
-
-
 .all-section li{
     width: 90px;
     text-align: center;
@@ -47,11 +45,10 @@ footer .social li{
 .all-section li:hover{
     background-color: $main-color;
 }
-
 .named{
     text-align: center;
     color: #fff;
-    font-size:25px;
+    font-size:20px;
     font-weight: 500;
 }
 @media (max-width:787px) {
