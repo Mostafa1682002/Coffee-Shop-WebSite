@@ -17,7 +17,7 @@ header .container {
 }
 
 header .container .logo {
-  height: 70px;
+  height: 60px;
 }
 
 .logo img {
@@ -250,12 +250,7 @@ section .container {
 
 @media (max-width: 992px) {
   .about .container {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
-}
-@media (max-width: 768px) {
-  .about .container {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   }
 }
 .about .container img {
